@@ -13,7 +13,7 @@ class BubbleChart
 
 	#Koordinaatit, joihin kappaleet tai tekstit hakeutuvat
     @center = {x: @width / 2, y: @height / 2}
-    @main_height = 460
+    @main_height = 380
     @location_centers = {
       "Luoteinen": {x: 420, y: 300},
       "Pohjoinen": {x: @width / 2, y: 300},

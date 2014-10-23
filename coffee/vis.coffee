@@ -207,8 +207,8 @@ class BubbleChart
          element = this
          mymodal.on 'hide.bs.modal', () ->
             that.hid_modal()
-         mymodal.on 'shown.bs.modal', () ->
-	        that.display_modal(d,i,element)
+         that.display_modal(d,i,element)
+         that.get_wiki_info(d.name)
          $(element).data('center', true)
          mymodal.modal 'show'
  
@@ -372,10 +372,39 @@ class BubbleChart
     d3.select(element).attr("stroke", (d) => d3.rgb(@fill_color(d.group)))
     @tooltip.hideTooltip()
 
+  get_wiki_info: (name) =>
+    modal = $('#population_modal')
+    if (name == "Tammela" || name == "Kaleva" || name == "Petsamo" || name == "Rahola" || name == "Leinola" || name == "Koivistonkylä" || name == "Viiala" || name == "Uusikylä" || name == "Niemi" || name == "Tulli")
+       name = name + " (Tampere)"
+    else if (name == "Lappi" || name == "Turtola" || name == "Kumpula" || name == "Polso" || name == "Myllypuro")
+       name = name + " (Tampere)"
+    else if (name == "Tampella")
+       name = name + "n alue"
+    else if (name == "Tammerkoski" || name == "Finlayson")
+       name = name + " (kaupunginosa)"
+    else if (name == "Tesomajärvi")
+       name = "Tesoma"
+    else if (name == "Pappila" || name == "Ristimäki" || name == "Nurmi" || name == "Rusko" || name == "Ojala") 
+       modal.find('#wiki').append("<div id='wiki-field'>" + 'Asuinalueesta ei ole tietoja' + "</div>")
+       return
+    else
+      name = name
+
+    wiki_url = 'http://fi.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exsentences=15&exlimit=10&exintro=&titles=' + name + '&callback=?'
+    $.getJSON wiki_url, (wiki_data) ->
+       console.log(wiki_data.query.pages[Object.keys(wiki_data.query.pages)[0]].extract);
+       wiki_text = wiki_data.query.pages[Object.keys(wiki_data.query.pages)[0]].extract
+       if (typeof wiki_text == "undefined")
+          modal.find('#wiki').append("<div id='wiki-field'>" + 'Asuinalueesta ei ole tietoja' + "</div>")
+          return
+       modal.find('#wiki').append("<div id='wiki-field'>" + wiki_text + "</div>")
+
 	#Poistetaan modaalin visualisaatio kun modaali suljetaan
   hid_modal: () =>
-     re = $('#population_modal').find(".bar_chart")
-     re.remove()
+     re_chart = $('#population_modal').find(".bar_chart")
+     re_chart.remove()
+     re_wiki = $('#population_modal').find("#wiki-field")
+     re_wiki.remove()
 
 	 #Näytetään modaali ja luodaan sille sisältö
   display_modal: (data, i, element) =>

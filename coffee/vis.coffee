@@ -414,6 +414,8 @@ class BubbleChart
 	#Luodaan modaalin visualisaatiolla (bar chart) tiedot
     bar_data = [data.people_80, data.people_90, data.people_00, data.people, data.people_20, data.people_40]
     year_names = ["1980", "1990", "2000", "2013", "2020", "2040"]
+    
+    color = @fill_color(data.group)
 
 	#Määritetään koko ja lasketaan maksimi (kertaa 1.1, jotta palkkien yläreunaan jää tilaa)
     w_bar = 95;
@@ -443,6 +445,7 @@ class BubbleChart
     bar_chart.selectAll("rect")
           .data(bar_data)
        .enter().append("svg:rect")
+          .attr("fill", color)
           .attr "x", (d,i) -> 
              bar_max_x(i) - 0.5
           .attr("y", 300)

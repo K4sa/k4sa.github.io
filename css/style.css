@@ -62,7 +62,7 @@ footer {
 	font-family: 'Josefin Slab', serif;
 }
 
-.tredata {
+.tredata, .areadata {
 	font-size: 120%;
 	font-family: 'Josefin Slab', serif;
 	fill: #2E2E2E;

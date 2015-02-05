@@ -1,0 +1,241 @@
+h1, h2 {
+	font-family: 'Lobster', cursive;
+}
+
+#part1 {
+	height: 100%;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 5%;
+	font-family: 'Arvo', serif;
+}
+
+.header_portfolio {
+	font-family: 'Lobster', cursive;
+	font-size: 120px;
+	text-align: center;
+	height: 120px;
+	background: url(img/mid_bg.jpg) repeat;
+}
+
+.header_studies {
+	font-family: 'Lobster', cursive;
+	font-size: 120px;
+	text-align: center;
+	height: 120px;
+	background: url(img/mid_bg2.jpg) repeat;
+}
+
+.content_container {
+	background: #00ACAE;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#part2 {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Arvo', serif;
+}
+
+@media screen and (max-width: 500px) {
+	#part2 {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	#part1 {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#part2 {
+		margin-top: 40px;
+	}
+}
+
+.space {
+	height: 60px;
+	background: #F5EFD5;
+}
+
+.viz_ztudies {
+	height: 100%;
+	min-height: 100px;
+	background: #F5EFD5;
+}
+
+#viz {
+	padding-bottom: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+.footer {
+	min-height: 100px;
+	height:100%;
+	background: #1D181F;
+	color: #F5EFD5;
+	font-family: 'Arvo', serif;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6 {
+	background-size: 500px 281px;
+	height: 281px;
+	text-align: center;
+	color: #fff;
+	max-width: 500px;
+}
+
+#box1 {
+	background: url(img/tre_bubble.jpg) no-repeat center;
+}
+
+#box2 {
+	background: url(img/xplore_site.jpg) no-repeat center;
+}
+
+#box3 {
+	background: url(img/xplore_app.jpg) no-repeat center;
+}
+
+#box4 {
+	background: url(img/malibu.jpg) no-repeat center;
+}
+
+#box5 {
+	background: url(img/datawesome.jpg) no-repeat center;
+}
+
+#box6 {
+	background: #1D181F;
+}
+
+.project_text, .empty_text {
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: #1D181F;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.mobile_project {
+
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	background: #00ACAE;
+	color: #1D181F;
+	text-align: center;
+	height: 100%;
+	max-width: 500px;
+	margin: auto;
+}
+
+.circular {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	margin: auto;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(https://lh5.googleusercontent.com/-zlTcQnSxsak/VIR-oQIO1HI/AAAAAAAAD50/-G0wSc3TxKs/w863-h865-no/IMGP2615-2.jpg) no-repeat;
+	background-size: 300px 300px;
+}
+
+#text_header {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.navbar-default {
+	background-color: transparent;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	border: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #2E2E2E;
+  font-family: 'Lobster', cursive;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0092B2;
+  background-color: transparent;
+}
+
+.btn-default {
+	background: transparent;
+	color: #000;
+	font-family: 'Arvo', serif;
+	font-weight: bold;
+}
+
+.btn-default:hover {
+	background: #1D181F;
+	color: #fff;
+}
+
+.modal-content {
+    border-radius: 0px;
+	background-color: #fff;
+	color: #1D181F;
+	font-family: 'Arvo', serif;
+}
+
+.modal-header {
+	font-size: 23px;
+	border-bottom: 0px;
+}
+
+.modal-body {
+	font-size: 18px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+.modal-footer {
+	border-top: 0px;
+	text-align: center;
+	padding: 0px 28px 10px 28px;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #ae5404;
+  stroke-width: 3px;
+}
+
+.node--leaf {
+  fill: #F5EFD5;
+}
+
+.label {
+  font: 12px 'Arvo', serif;
+  text-anchor: middle;
+  color: #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}

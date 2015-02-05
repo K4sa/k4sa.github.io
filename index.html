@@ -95,21 +95,30 @@
                 <p>Datavisualisointi Tampereen väestökehityksestä. Apps4Pirkanmaa sija 2.</p>
               </div>
             </div>
+            <div class="mobile_project" id="m_box1" style="display: none;"><h2>Tampere in the Bubble</h2><p>Datavisualisointi Tampereen väestökehityksestä. Apps4Pirkanmaa sija 2.</p>
+              <div class ="btn_container"><a type="button" class="btn btn-success" id="project-btn" href="http://k4sa.github.io/tampere_bubble/">Avaa!</a></div>
+            </div>
           </div>
           <div class="col-md-4">
             <div class="project_container" id="box2">
               <div class="project_text" onclick="window.open('http://algoni.github.io/xploreearth/info.html','mywindow');" style="cursor: pointer;">
                 <h2>Xplore Earth Site</h2>
-                <p>Datavisualisointi Tampereen väestökehityksestä. Apps4Pirkanmaa sija 2.</p>
+                <p>Xplore Earth web applikaatio. Etsi kuvan sijainti ja vastaa haasteeseen.</p>
               </div>
+            </div>
+            <div class="mobile_project" id="m_box2" style="display: none;"><h2>Xplore Earth Site</h2><p>Xplore Earth web applikaatio. Etsi kuvan sijainti ja vastaa haasteeseen.</p>
+              <div class ="btn_container"><a type="button" class="btn btn-default" id="project-btn" href="http://algoni.github.io/xploreearth/info.html">Avaa!</a></div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="project_container" id="box3">
               <div class="project_text" onclick="window.open('http://xplore-api.herokuapp.com/','mywindow');" style="cursor: pointer;">
                 <h2>Xplore Earth Webapp</h2>
-                <p>Datavisualisointi Tampereen väestökehityksestä. Apps4Pirkanmaa sija 2.</p>
+                <p>Xplore Earth web applikaatio. Etsi kuvan sijainti ja vastaa haasteeseen.</p>
               </div>
+            </div>
+            <div class="mobile_project" id="m_box3" style="display: none;"><h2>Xplore Earth Webapp</h2><p>Xplore Earth web applikaatio. Etsi kuvan sijainti ja vastaa haasteeseen.</p>
+              <div class ="btn_container"><a type="button" class="btn btn-default" id="project-btn" href="http://xplore-api.herokuapp.com/">Avaa!</a></div>
             </div>
           </div>
       </div>
@@ -119,17 +128,21 @@
             <div class="project_container" id="box4">
               <div class="project_text" onclick="window.open('http://kaukapartio.fi/malibu/','mywindow');" style="cursor: pointer;">
                 <h2>Malibu talvileiri</h2>
-                <p>Datavisualisointi Tampereen väestökehityksestä. Apps4Pirkanmaa sija 2.</p>
+                <p>Kaukapartio Ry:n talvileirin ilmottautuminen ja infosivu.</p>
               </div>
+            </div>
+            <div class="mobile_project" id="m_box4" style="display: none;"><h2>Malibu talvileiri</h2><p>Kaukapartio Ry:n talvileirin ilmottautuminen ja infosivu.</p>
+              <div class ="btn_container"><a type="button" class="btn btn-default" id="project-btn" href="http://kaukapartio.fi/malibu/">Avaa!</a></div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="project_container" id="box5">
               <div class="project_text" onclick="window.open('http://algoni.github.io/xploreearth/info.html','mywindow');" style="cursor: pointer;">
                 <h2>Datawesome</h2>
-                <p>Datavisualisointi Tampereen väestökehityksestä. Apps4Pirkanmaa sija 2.</p>
+                <p>Datavisualisointeja ja big dataa.</p>
               </div>
             </div>
+            <div class="mobile_project" id="m_box5" style="display: none;"><h2>Datawesome</h2><p>Datavisualisointeja ja big dataa.</p></div>
           </div>
           <div class="col-md-4">
             <div class="project_empty" id="box6">
@@ -182,12 +195,15 @@
         $(function() {
           $('.project_text').hide();
           if (window.innerWidth <= 991) {
-              $('#box1').after('<div class="mobile_project" onclick="window.open("http://k4sa.github.io/tampere_bubble/","mywindow")><h2>Tampere in the Bubble</h2><p>Datavisualisointi Tampereen väestökehityksestä. Apps4Pirkanmaa sija 2.</p></div>');
-              $('#box2').after('<div class="mobile_project" onclick="window.open("http://algoni.github.io/xploreearth/info.html","mywindow")><h2>Xplore Earth Site</h2><p>Xplore Earth web applikaatio. Etsi kuvan sijainti ja vastaa haasteeseen.</p></div>');
-              $('#box3').after('<div class="mobile_project" onclick="window.open("http://xplore-api.herokuapp.com/","mywindow")><h2>Xplore Earth Webapp</h2><p>Xplore Earth web applikaatio. Etsi kuvan sijainti ja vastaa haasteeseen.</p></div>');
-              $('#box4').after('<div class="mobile_project" onclick="window.open("http://kaukapartio.fi/malibu/","mywindow")><h2>Malibu leiri</h2><p>Kaukapartio Ry:n talvileirin ilmottautuminen ja infosivu.</p></div>');
-              $('#box5').after('<div class="mobile_project"><h2>Datawesome</h2><p>Datavisualisointeja. Sivusto työnalla.</p></div>');
-            }
+            $('.project_container').click(function() {
+              var searchable = "m_" + this.id;
+              var change = document.getElementById(searchable);
+              if (change.style.display == "none") 
+                change.style.display = "inline";
+              else
+                change.style.display = "none";
+              });
+            };
         });
     </script>
     <script type="text/javascript" src="js/study_viz.js"></script>

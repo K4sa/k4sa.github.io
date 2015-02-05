@@ -27,6 +27,15 @@ h1, h2 {
 	background: url(img/mid_bg2.jpg) repeat;
 }
 
+@media screen and (max-width: 991px) {
+	.header_studies {
+		font-size: 80px;
+	}
+	.header_portfolio {
+		font-size: 80px;
+	}
+}
+
 .content_container {
 	background: #00ACAE;
 	padding-top: 5%;

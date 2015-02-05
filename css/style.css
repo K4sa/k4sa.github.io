@@ -50,12 +50,20 @@ h1, h2 {
 
 @media screen and (max-width: 500px) {
 	#part2 {
-		margin-left: 0%;
+		margin-left: 0;
 		margin-right: 0%;
 	}
 	#part1 {
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+	.col-md-4 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.row {
+		margin-right: 0px;
+		margin-left: 0px;
 	}
 }
 

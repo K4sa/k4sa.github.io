@@ -1,0 +1,135 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "Kandidaatti",
+   "children": [
+    {
+     "name": "Tietojohtaminen",
+     "children": [
+      {"name": "Toimitusketjun hallinta ja globaalit kuljetukset", "size": 4},
+      {"name": "Älykkäät liikennejärjestelmät", "size": 3},
+      {"name": "Teknologiajohtaminen", "size": 4},
+      {"name": "Organisaation oppiminen ja uudistuminen", "size": 5},
+      {"name": "Tietohallinnon johtaminen", "size": 5},
+      {"name": "Palvelutoiminnan perusteet", "size": 4},
+      {"name": "Tietojohtamisen peruskurssi", "size": 4},
+      {"name": "Tietojohtamisen perusteet 2", "size": 4}
+     ]
+    },
+    {
+     "name": "Hypermedia",
+     "children": [
+      {"name": "Käyttöliittymäsuunnittelun perusteet", "size": 3},
+      {"name": "Hypermedia Workshop", "size": 2},
+      {"name": "Johdatus hypermediaan", "size": 3},
+      {"name": "Hypermediajärjestelmät", "size": 3},
+      {"name": "Saavutettavuus", "size": 3},
+      {"name": "Verkkopalvelun sisällöntuotanto", "size": 5},
+      {"name": "Hypermedian tuotantoprojektin hallinnan erityispiirteet", "size": 4},
+      {"name": "Hypermedia Project Work", "size": 5}
+     ]
+    },
+    {
+     "name": "Perusopinnot",
+     "children": [
+      {"name": "Matematiikka",
+      "children": [
+        {"name": "Insinöörimatematiikka 1", "size": 5},
+        {"name": "Insinöörimatematiikka 2", "size": 5},
+        {"name": "Todennäköisyyslaskenta", "size": 4},
+        {"name": "Algoritmimatematiikka", "size": 4},
+        {"name": "Operaatiotutkimus", "size": 4}
+        ]
+      },
+      {"name": "Fysiikka ja kemia",
+      "children": [
+        {"name": "Insinöörifysiikka I", "size": 6},
+        {"name": "Insinöörifysiikka II", "size": 7},
+        {"name": "Insinöörikemia", "size": 3}
+        ]
+      },
+      {"name": "Teollisuustalous",
+      "children": [
+        {"name": "Yritys- ja kauppaoikeus", "size": 1},
+        {"name": "Teollisuustalouden perusteet", "size": 4},
+        {"name": "Yrityksen talous", "size": 4},
+        {"name": "Operations Management", "size": 5}
+        ]
+      },
+      {"name": "Tietotekniikka",
+      "children": [
+        {"name": "Tietoliikenneverkkojen perusteet", "size": 5},
+        {"name": "Tietotekniikan perusteet", "size": 4},
+        {"name": "Ohjelmointi I", "size": 4},
+        {"name": "Tietoturvallisuuden perusteet", "size": 3}
+        ]
+      },
+      {"name": "Kielet",
+      "children": [
+        {"name": "Ruotsin kielen suullinen ja kirjallinen viestintä", "size": 3}
+        ]
+      },
+      {"name": "Muut",
+      "children": [
+        {"name": "Tieteellisen kirjoittamisen perusteet", "size": 2},
+        {"name": "Akateeminen opiskelu", "size": 1}
+        ]
+      }
+     ]
+    },
+    {
+     "name": "Vapaasti valittavat",
+     "children": [
+      {"name": "Projektinhallinta", "size": 4},
+      {"name": "Yritysorganisaatiot ja ihmisten johtaminen", "size": 4}
+     ]
+    },
+        {
+     "name": "Kandidaatintyö", "size": 8
+    }
+   ]
+  },
+  {
+   "name": "Diplomi-insinööri",
+   "children": [
+    {
+     "name": "Perusopinnot",
+     "children": [
+      {"name": "Liiketoimintatiedon hallinta", "size": 4}
+     ]
+    },
+    {
+     "name": "Tiedonhallinta",
+     "children": [
+      {"name": "Teknologiaoikeus", "size": 5},
+      {"name": "Aineeton pääoma", "size": 4},
+      {"name": "Uuden tiedon luominen ja sen menetelmät", "size": 4},
+      {"name": "Tietojärjestelmien uusiminen ja käyttöönotto", "size": 4},
+      {"name": "Introduction to Entertainment and Media Management", "size": 4},
+      {"name": "Liiketoiminnan ja tietojärjestelmien yhteensovittaminen", "size": 4},
+      {"name": "Software Business", "size": 4}
+     ]
+    },
+    {
+     "name": "Ohjelmistotekniikka",
+     "children": [
+      {"name": "Käytettävyyden perusteet", "size": 3},
+      {"name": "Ohjelmoinnin peruskurssi", "size": 5},
+      {"name": "Ohjelmoinnin tekniikat", "size": 6},
+      {"name": "Tietorakenteet ja algoritmit", "size": 5},
+      {"name": "Johdatus tietokantoihin", "size": 4}
+     ]
+    },
+    {
+     "name": "Vapaasti valittavat",
+     "children": [
+      {"name": "Turvallisuusjohtamisen perusteet", "size": 3},
+      {"name": "Yrityksen turvallisuusjohtaminen", "size": 5},
+      {"name": "Markkinointi", "size": 4}
+     ]
+    }
+   ]
+  }
+ ]
+}
